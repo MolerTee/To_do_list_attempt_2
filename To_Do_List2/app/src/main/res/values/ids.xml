@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="welcome_message" type="id" />
+    <item name="task_title_text_box" type="id" />
+    <item name="task_details_text_box" type="id" />
+    <item name="task_list" type="id" />
+</resources>

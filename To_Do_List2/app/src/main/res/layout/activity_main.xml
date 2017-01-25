@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Weclome to your to do list!" />
+
+    <EditText
+        android:id="@+id/task_title_text_box"
+        android:hint="list title entered here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/task_details_text_box"
+        android:hint="list item details entered here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/task_details_display_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="list item details displayed here" />
+
+    <ListView
+        android:id="@+id/task_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:entries="@array/taskList"/>
+
+
+    <Button
+        android:id="@+id/show_task_button"
+        android:text="show tasks"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onShowTaskButtonClick"/>
+
+    <Button
+        android:id="@+id/create_task_button"
+        android:text="create task"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCreateTaskButtonClick"/>
+
+    <Button
+        android:id="@+id/save_task"
+        android:text="Save Task"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSaveTaskClick"
+        />
+
+
+    <Button
+        android:id="@+id/home_button"
+        android:text="Home"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onHomeScreenButtonClick"
+         />
+
+
+
+
+
+</LinearLayout>
